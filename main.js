@@ -10,11 +10,11 @@ document.getElementById("btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
   //IF Statements
-  if (speedEl - limitEl >= 20) {
+  if (speedEl >= limitEl + 20) {
     ticketEl.innerHTML = "BIG TICKET";
-  } else if (speedEl - limitEl < 20) {
+  } else if (speedEl >= limitEl + 10) {
     ticketEl.innerHTML = "SMALL TICKET";
-  } else if (speedEl <= limitEl) {
+  } else {
     ticketEl.innerHTML = "NO TICKET";
   }
 }
